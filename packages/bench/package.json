@@ -1,6 +1,6 @@
 {
   "name": "jevkit-bench",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Score a labeled TypeSafe Jev suite for accuracy and cost, and compare two runs. Catches regressions aggregate accuracy hides.",
   "keywords": [
     "jev",

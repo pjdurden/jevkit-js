@@ -1,6 +1,6 @@
 {
   "name": "jevkit-calibrate",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Verify TypeSafe Jev's calibration on your own data. Reliability diagrams, ECE, Brier, and confidence thresholds derived from labeled outcomes.",
   "keywords": [
     "jev",

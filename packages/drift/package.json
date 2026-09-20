@@ -1,6 +1,6 @@
 {
   "name": "jevkit-drift",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Detect when a new TypeSafe Jev model version flips decisions your code depends on. Replays a golden set and diffs the answers.",
   "keywords": [
     "jev",

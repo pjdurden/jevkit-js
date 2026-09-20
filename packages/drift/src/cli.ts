@@ -1,6 +1,9 @@
 #!/usr/bin/env node
 /** `jevkit-drift` command line interface. */
 
+import { realpathSync } from "node:fs";
+import { pathToFileURL } from "node:url";
+
 import { RecordFormatError, readRecords } from "jevkit-core";
 
 import { compareSets } from "./compare.js";
@@ -89,6 +92,17 @@ export function main(argv: string[] = process.argv.slice(2)): number {
   return EXIT_OK;
 }
 
-const invokedDirectly =
-  process.argv[1] !== undefined && import.meta.url === `file://${process.argv[1]}`;
-if (invokedDirectly) process.exit(main());
+function invokedDirectly(): boolean {
+  const entry = process.argv[1];
+  if (!entry) return false;
+  try {
+    // npm installs a bin entry as a symlink, so argv[1] is the shim path while
+    // import.meta.url is the real file. Comparing them unresolved makes the CLI
+    // silently do nothing and exit 0 once installed.
+    return import.meta.url === pathToFileURL(realpathSync(entry)).href;
+  } catch {
+    return false;
+  }
+}
+
+if (invokedDirectly()) process.exit(main());
