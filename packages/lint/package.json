@@ -1,0 +1,17 @@
+{
+  "name": "@jevkit/lint",
+  "version": "0.1.0",
+  "description": "Static linter for TypeSafe Jev questions. Catches the documented jev-1.13 failure modes before you spend a token. No API key required.",
+  "keywords": ["jev", "typesafe", "system-one", "lint", "linter", "static-analysis"],
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": { ".": { "types": "./dist/index.d.ts", "default": "./dist/index.js" } },
+  "bin": { "jevkit-lint": "./dist/cli.js" },
+  "files": ["dist", "README.md"],
+  "engines": { "node": ">=18" },
+  "repository": { "type": "git", "url": "git+https://github.com/pjdurden/jevkit-js.git" },
+  "dependencies": { "@jevkit/core": "workspace:^0.1.0" },
+  "scripts": { "build": "tsc -b" }
+}
