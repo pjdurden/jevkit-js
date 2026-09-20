@@ -1,4 +1,4 @@
-# @jevkit/core
+# jevkit-core
 
 Shared substrate for [jevkit](https://github.com/pjdurden/jevkit-js), a set of
 tools for building on TypeSafe's Jev. Nothing in this package calls the API.
@@ -19,7 +19,7 @@ tools for building on TypeSafe's Jev. Nothing in this package calls the API.
 ## Install
 
 ```bash
-npm install @jevkit/core
+npm install jevkit-core
 ```
 
 ## License

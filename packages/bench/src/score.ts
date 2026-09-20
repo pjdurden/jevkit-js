@@ -10,7 +10,7 @@
  * billed.
  */
 
-import { type Record as JevlRecord, parseAnswers } from "@jevkit/core";
+import { type Record as JevlRecord, parseAnswers } from "jevkit-core";
 
 export const PRICE_PER_MTOK = 0.042;
 

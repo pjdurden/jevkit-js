@@ -1,5 +1,5 @@
 import { expect, it } from "vitest";
-import { Record as JevlRecord } from "@jevkit/core";
+import { Record as JevlRecord } from "jevkit-core";
 import {
   Observation, brierScore, calibrate, expectedCalibrationError, logLoss,
   maximumCalibrationError, observationsFromRecords, recommendForAccuracy,

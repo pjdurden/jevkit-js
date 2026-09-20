@@ -114,7 +114,7 @@ export class Record {
     if (version > FORMAT_VERSION) {
       throw new RecordFormatError(
         `${where}: record format v${version} is newer than this reader ` +
-          `(v${FORMAT_VERSION}). Upgrade @jevkit/core rather than guessing.`,
+          `(v${FORMAT_VERSION}). Upgrade jevkit-core rather than guessing.`,
       );
     }
 

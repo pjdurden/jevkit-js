@@ -3,7 +3,7 @@
 
 import { readFileSync } from "node:fs";
 
-import { RecordFormatError, parseRecords } from "@jevkit/core";
+import { RecordFormatError, parseRecords } from "jevkit-core";
 
 import { lint } from "./linter.js";
 import { RULES } from "./rules.js";

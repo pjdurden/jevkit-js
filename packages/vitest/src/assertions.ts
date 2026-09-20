@@ -6,7 +6,7 @@
  * because a 0.51/0.49 split and a 0.99/0.01 split are different bugs.
  */
 
-import { parseAnswer } from "@jevkit/core";
+import { parseAnswer } from "jevkit-core";
 
 export function describeAnswer(qid: string, raw: unknown): string {
   const answer = parseAnswer(qid, raw);

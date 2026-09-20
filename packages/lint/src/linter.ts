@@ -1,6 +1,6 @@
 /** The lint entry point. */
 
-import { normalizeQuestions } from "@jevkit/core";
+import { normalizeQuestions } from "jevkit-core";
 
 import { Diagnostic, type Severity, compareDiagnostics } from "./diagnostic.js";
 import { buildContext, rulesFor } from "./rules.js";

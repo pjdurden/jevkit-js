@@ -1,4 +1,4 @@
-# @jevkit/lint
+# jevkit-lint
 
 Static linter for [TypeSafe](https://typesafe.ai) Jev questions.
 
@@ -15,13 +15,13 @@ needs no key and costs nothing to run in CI.
 ## Install
 
 ```bash
-npm install @jevkit/lint
+npm install jevkit-lint
 ```
 
 ## Use
 
 ```ts
-import { lint } from "@jevkit/lint";
+import { lint } from "jevkit-lint";
 
 const result = lint({
   urgency: { type: "noul", instructions: "How many days has the customer waited?" },

@@ -3,7 +3,7 @@ import { tmpdir } from "node:os";
 import { join } from "node:path";
 import { expect, it } from "vitest";
 
-import { readRecords } from "@jevkit/core";
+import { readRecords } from "jevkit-core";
 import { Cassette, CassetteMiss, assertAnswer, assertConfident, describeAnswer } from "../src/index.js";
 
 const QUESTIONS = { team: { type: "choice", instructions: "Which team handles this" } };

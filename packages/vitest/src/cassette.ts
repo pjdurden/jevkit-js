@@ -13,7 +13,7 @@
 
 import { existsSync } from "node:fs";
 
-import { Record as JevlRecord, appendRecord, readRecords, recordId } from "@jevkit/core";
+import { Record as JevlRecord, appendRecord, readRecords, recordId } from "jevkit-core";
 
 export type Mode = "replay" | "record" | "auto" | "passthrough";
 

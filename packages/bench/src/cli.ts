@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 /** `jevkit-bench` command line interface. */
 
-import { RecordFormatError, readRecords } from "@jevkit/core";
+import { RecordFormatError, readRecords } from "jevkit-core";
 
 import { PRICE_PER_MTOK, compareSuites, scoreRecords } from "./score.js";
 

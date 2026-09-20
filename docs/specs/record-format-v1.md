@@ -6,7 +6,7 @@ It is the shared substrate for four jevkit packages:
 
 | Package | Uses a record as |
 | --- | --- |
-| `jevkit-pytest` / `@jevkit/vitest` | a cassette: replay `answers` instead of calling the API |
+| `jevkit-pytest` / `jevkit-vitest` | a cassette: replay `answers` instead of calling the API |
 | `jevkit-drift` | a golden set: replay `request` against a new model, diff `answers` |
 | `jevkit-bench` | a task instance: `tags` select the suite, `label` scores it |
 | `jevkit-calibrate` | a labeled observation: `answers.probabilities` vs `label` |

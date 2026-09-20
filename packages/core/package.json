@@ -1,15 +1,36 @@
 {
-  "name": "@jevkit/core",
+  "name": "jevkit-core",
   "version": "0.2.0",
   "description": "Shared substrate for jevkit: the .jevl record format, canonical request digests, question normalization, and token budgets for TypeSafe's Jev.",
-  "keywords": ["jev", "typesafe", "system-one", "llm", "calibration"],
+  "keywords": [
+    "jev",
+    "typesafe",
+    "system-one",
+    "llm",
+    "calibration"
+  ],
   "license": "MIT",
   "type": "module",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
-  "exports": { ".": { "types": "./dist/index.d.ts", "default": "./dist/index.js" } },
-  "files": ["dist", "README.md"],
-  "engines": { "node": ">=18" },
-  "repository": { "type": "git", "url": "git+https://github.com/pjdurden/jevkit-js.git" },
-  "scripts": { "build": "tsc -b" }
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pjdurden/jevkit-js.git"
+  },
+  "scripts": {
+    "build": "tsc -b"
+  }
 }

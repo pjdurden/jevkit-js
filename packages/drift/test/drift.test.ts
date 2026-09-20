@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { Record as JevlRecord } from "@jevkit/core";
+import { Record as JevlRecord } from "jevkit-core";
 import { compareRecords, compareSets, replay, totalVariation } from "../src/index.js";
 
 const QUESTIONS = { team: { type: "choice", instructions: "Which team" } };

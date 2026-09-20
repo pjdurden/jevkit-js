@@ -1,17 +1,44 @@
 {
-  "name": "@jevkit/bench",
+  "name": "jevkit-bench",
   "version": "0.1.0",
   "description": "Score a labeled TypeSafe Jev suite for accuracy and cost, and compare two runs. Catches regressions aggregate accuracy hides.",
-  "keywords": ["jev", "typesafe", "system-one", "benchmark", "evaluation", "accuracy", "cost"],
+  "keywords": [
+    "jev",
+    "typesafe",
+    "system-one",
+    "benchmark",
+    "evaluation",
+    "accuracy",
+    "cost"
+  ],
   "license": "MIT",
   "type": "module",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
-  "exports": { ".": { "types": "./dist/index.d.ts", "default": "./dist/index.js" } },
-  "bin": { "jevkit-bench": "./dist/cli.js" },
-  "files": ["dist", "README.md"],
-  "engines": { "node": ">=18" },
-  "repository": { "type": "git", "url": "git+https://github.com/pjdurden/jevkit-js.git" },
-  "dependencies": { "@jevkit/core": "workspace:^0.2.0" },
-  "scripts": { "build": "tsc -b" }
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "bin": {
+    "jevkit-bench": "./dist/cli.js"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pjdurden/jevkit-js.git"
+  },
+  "dependencies": {
+    "jevkit-core": "^0.2.0"
+  },
+  "scripts": {
+    "build": "tsc -b"
+  }
 }

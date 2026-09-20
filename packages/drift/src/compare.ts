@@ -16,7 +16,7 @@
  *   threshold, so a large shift is an early warning before anything flips.
  */
 
-import { type Answer, type Record as JevlRecord, parseAnswers } from "@jevkit/core";
+import { type Answer, type Record as JevlRecord, parseAnswers } from "jevkit-core";
 
 /**
  * Total variation distance between two distributions, on 0..1.

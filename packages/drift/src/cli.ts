@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 /** `jevkit-drift` command line interface. */
 
-import { RecordFormatError, readRecords } from "@jevkit/core";
+import { RecordFormatError, readRecords } from "jevkit-core";
 
 import { compareSets } from "./compare.js";
 

@@ -1,4 +1,4 @@
-# @jevkit/vitest
+# jevkit-vitest
 
 Record and replay TypeSafe Jev requests in vitest.
 
@@ -9,14 +9,14 @@ HTTP: record real responses once, replay them forever, re-record on purpose.
 > Unofficial and unaffiliated with TypeSafe.
 
 ```bash
-npm install -D @jevkit/vitest
+npm install -D jevkit-vitest
 ```
 
 ## Use
 
 ```ts
 import { expect, it } from "vitest";
-import { cassetteFor } from "@jevkit/vitest";
+import { cassetteFor } from "jevkit-vitest";
 
 it("routes billing questions", async () => {
   const cassette = cassetteFor("routes billing questions", { systemOne });
@@ -55,7 +55,7 @@ green without a secret.
 ## Assertions that explain themselves
 
 ```ts
-import { assertAnswer, assertConfident } from "@jevkit/vitest";
+import { assertAnswer, assertConfident } from "jevkit-vitest";
 
 assertAnswer(response.answers.team, "billing", { minProbability: 0.6 });
 assertConfident(response.answers.urgency, 0.8);
@@ -69,8 +69,8 @@ none, so its distance from 0.5 is used and the message says which it used.
 
 ## Cassettes are golden sets
 
-A cassette is a `.jevl` file, the same format `@jevkit/drift`, `@jevkit/bench` and
-`@jevkit/calibrate` read. So the recordings your tests already make are a golden
+A cassette is a `.jevl` file, the same format `jevkit-drift`, `jevkit-bench` and
+`jevkit-calibrate` read. So the recordings your tests already make are a golden
 set you can replay against the next model version:
 
 ```bash

@@ -1,17 +1,43 @@
 {
-  "name": "@jevkit/drift",
+  "name": "jevkit-drift",
   "version": "0.1.0",
   "description": "Detect when a new TypeSafe Jev model version flips decisions your code depends on. Replays a golden set and diffs the answers.",
-  "keywords": ["jev", "typesafe", "system-one", "drift", "regression", "testing"],
+  "keywords": [
+    "jev",
+    "typesafe",
+    "system-one",
+    "drift",
+    "regression",
+    "testing"
+  ],
   "license": "MIT",
   "type": "module",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
-  "exports": { ".": { "types": "./dist/index.d.ts", "default": "./dist/index.js" } },
-  "bin": { "jevkit-drift": "./dist/cli.js" },
-  "files": ["dist", "README.md"],
-  "engines": { "node": ">=18" },
-  "repository": { "type": "git", "url": "git+https://github.com/pjdurden/jevkit-js.git" },
-  "dependencies": { "@jevkit/core": "workspace:^0.2.0" },
-  "scripts": { "build": "tsc -b" }
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "bin": {
+    "jevkit-drift": "./dist/cli.js"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pjdurden/jevkit-js.git"
+  },
+  "dependencies": {
+    "jevkit-core": "^0.2.0"
+  },
+  "scripts": {
+    "build": "tsc -b"
+  }
 }

@@ -1,6 +1,6 @@
 /** Turning labeled `.jevl` records into calibration observations. */
 
-import { type Record as JevlRecord, parseAnswers } from "@jevkit/core";
+import { type Record as JevlRecord, parseAnswers } from "jevkit-core";
 
 import { Observation } from "./metrics.js";
 

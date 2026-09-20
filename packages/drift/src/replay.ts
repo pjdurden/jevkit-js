@@ -1,6 +1,6 @@
 /** Replaying a golden set against a model. */
 
-import { Record as JevlRecord } from "@jevkit/core";
+import { Record as JevlRecord } from "jevkit-core";
 
 export type SystemOneCallable = (
   state: unknown,

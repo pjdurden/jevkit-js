@@ -8,10 +8,10 @@ export default defineConfig({
   // `pnpm build` type-checks and emits the published artifacts separately.
   resolve: {
     alias: {
-      "@jevkit/core": src("./packages/core/src/index.ts"),
-      "@jevkit/drift": src("./packages/drift/src/index.ts"),
-      "@jevkit/calibrate": src("./packages/calibrate/src/index.ts"),
-      "@jevkit/bench": src("./packages/bench/src/index.ts"),
+      "jevkit-core": src("./packages/core/src/index.ts"),
+      "jevkit-drift": src("./packages/drift/src/index.ts"),
+      "jevkit-calibrate": src("./packages/calibrate/src/index.ts"),
+      "jevkit-bench": src("./packages/bench/src/index.ts"),
     },
   },
   test: {

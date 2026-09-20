@@ -1,5 +1,5 @@
 import { expect, it } from "vitest";
-import { Record as JevlRecord } from "@jevkit/core";
+import { Record as JevlRecord } from "jevkit-core";
 import { compareSuites, scoreRecords } from "../src/index.js";
 
 function rec(choice: string, label: string, opts: {

@@ -1,4 +1,4 @@
-# @jevkit/drift
+# jevkit-drift
 
 TypeSafe's docs warn that `jev-latest` moves when a new version ships, and that
 confidence thresholds tuned against one version do not automatically hold on the
@@ -8,7 +8,7 @@ you actually care about, what changed?
 > Unofficial and unaffiliated with TypeSafe.
 
 ```bash
-npm install @jevkit/drift
+npm install jevkit-drift
 ```
 
 ## Two kinds of change
@@ -26,8 +26,8 @@ up either too noisy to read or too quiet to help.
 ## Use
 
 ```ts
-import { readRecords, writeRecords } from "@jevkit/core";
-import { compareSets, replay } from "@jevkit/drift";
+import { readRecords, writeRecords } from "jevkit-core";
+import { compareSets, replay } from "jevkit-drift";
 
 const baseline = readRecords("golden.jevl");
 const candidate = await replay(baseline, (s, q) =>

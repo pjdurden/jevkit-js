@@ -6,7 +6,7 @@
  * diagrams, ECE, MCE, Brier and log loss over labeled answers, and turns a
  * labeled set into a defensible confidence threshold.
  *
- * No dependencies beyond @jevkit/core. A calibration check that drags in a
+ * No dependencies beyond jevkit-core. A calibration check that drags in a
  * numerical stack is a calibration check that does not get run.
  */
 

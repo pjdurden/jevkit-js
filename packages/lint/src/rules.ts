@@ -7,10 +7,10 @@
  * failure mode so the CLI can point at the source.
  *
  * Rules are static. They read your question definitions and never call the API,
- * which is why @jevkit/lint works without an API key.
+ * which is why jevkit-lint works without an API key.
  */
 
-import { type BudgetReport, type Question, checkBudget } from "@jevkit/core";
+import { type BudgetReport, type Question, checkBudget } from "jevkit-core";
 
 import { Diagnostic } from "./diagnostic.js";
 

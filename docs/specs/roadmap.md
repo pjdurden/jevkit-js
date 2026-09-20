@@ -11,7 +11,7 @@ Four of the planned packages are the same package wearing different hats.
 observations. That is **one format with four consumers**, which is why
 [`.jevl`](./record-format-v1.md) is defined before anything that reads it.
 
-The kernel (`jevkit-core` / `@jevkit/core`) holds what every tool needs and
+The kernel (`jevkit-core` / `jevkit-core`) holds what every tool needs and
 nothing else: canonical digests, the record format, question normalization,
 token budgets. It never calls the API.
 
@@ -27,10 +27,10 @@ Each wave is independently shippable.
 
 | Wave | Python | JavaScript | Status |
 | --- | --- | --- | --- |
-| 0 | `jevkit-core` | `@jevkit/core` | **done** |
-| 1 | `jevkit-lint` | `@jevkit/lint` | **done** |
-| 2 | `jevkit-pytest`, `jevkit-drift`, `jevkit-calibrate`, `jevkit-bench` | `@jevkit/vitest`, `@jevkit/drift`, `@jevkit/calibrate`, `@jevkit/bench` | **done** |
-| 3 | `jevkit-pydantic`, `jevkit-batch`, `jevkit-cli` | `@jevkit/zod`, `@jevkit/batch`, `@jevkit/cli` (incl. `sgrep`) | planned |
+| 0 | `jevkit-core` | `jevkit-core` | **done** |
+| 1 | `jevkit-lint` | `jevkit-lint` | **done** |
+| 2 | `jevkit-pytest`, `jevkit-drift`, `jevkit-calibrate`, `jevkit-bench` | `jevkit-vitest`, `jevkit-drift`, `jevkit-calibrate`, `jevkit-bench` | **done** |
+| 3 | `jevkit-pydantic`, `jevkit-batch`, `jevkit-cli` | `jevkit-zod`, `jevkit-batch`, `jevkit-cli` (incl. `sgrep`) | planned |
 | 4 | `jevkit-dates`, `-extract`, `-classify`, `-tools`, `-guard` | same | planned |
 | 5 | `jevkit-llamaindex`, `-langchain`, `-haystack` | n/a | planned |
 
@@ -40,7 +40,7 @@ they break when someone else ships, and they are the first thing to rot.
 ## Naming
 
 `jev-lint` and `sgrep` were already taken on npm by unrelated packages, so
-everything lives under one namespace: `@jevkit/*` on npm, `jevkit-*` on PyPI.
+everything lives under one namespace: `jevkit-*` on npm, `jevkit-*` on PyPI.
 
 ## Non-goals
 

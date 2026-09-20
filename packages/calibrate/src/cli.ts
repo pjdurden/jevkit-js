@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 /** `jevkit-calibrate` command line interface. */
 
-import { RecordFormatError, readRecords, type Record as JevlRecord } from "@jevkit/core";
+import { RecordFormatError, readRecords, type Record as JevlRecord } from "jevkit-core";
 
 import { calibrate } from "./metrics.js";
 import { observationsFromRecords } from "./records.js";
