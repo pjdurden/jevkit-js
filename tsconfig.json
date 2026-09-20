@@ -1,7 +1,23 @@
 {
   "files": [],
   "references": [
-    { "path": "packages/core" },
-    { "path": "packages/lint" }
+    {
+      "path": "packages/core"
+    },
+    {
+      "path": "packages/lint"
+    },
+    {
+      "path": "packages/drift"
+    },
+    {
+      "path": "packages/calibrate"
+    },
+    {
+      "path": "packages/bench"
+    },
+    {
+      "path": "packages/vitest"
+    }
   ]
 }

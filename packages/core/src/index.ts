@@ -6,6 +6,13 @@
  * view of a question, and token budget estimation.
  */
 
+export {
+  Answer,
+  NOUL_THRESHOLD,
+  parseAnswer,
+  parseAnswers,
+  type AnswerType,
+} from "./answers.js";
 export { canonicalJson, digest, recordId, requestId, type Json } from "./canonical.js";
 export {
   Question,
@@ -33,4 +40,4 @@ export {
   type BudgetReport,
 } from "./tokens.js";
 
-export const VERSION = "0.1.0";
+export const VERSION = "0.2.0";
