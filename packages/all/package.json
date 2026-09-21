@@ -1,0 +1,40 @@
+{
+  "name": "@jevkit/all",
+  "version": "0.1.0",
+  "description": "Tooling for building on TypeSafe's Jev, the first System One model. Installs the whole jevkit ring: record format, linter, drift, benchmark, calibration, and the vitest integration.",
+  "keywords": [
+    "jev",
+    "typesafe",
+    "system-one",
+    "llm",
+    "calibration",
+    "evaluation"
+  ],
+  "license": "MIT",
+  "files": [
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pjdurden/jevkit-js.git",
+    "directory": "packages/all"
+  },
+  "homepage": "https://github.com/pjdurden/jevkit-js#readme",
+  "bugs": {
+    "url": "https://github.com/pjdurden/jevkit-js/issues"
+  },
+  "dependencies": {
+    "jevkit-core": "^0.2.0",
+    "jevkit-lint": "^0.1.1",
+    "jevkit-drift": "^0.1.1",
+    "jevkit-bench": "^0.1.1",
+    "jevkit-calibrate": "^0.1.1",
+    "jevkit-vitest": "^0.1.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

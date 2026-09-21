@@ -1,8 +1,8 @@
 {
-  "name": "jevkit",
+  "name": "jevkit-workspace",
   "private": true,
   "version": "0.0.0",
-  "description": "Workspace root for the @jevkit packages. Not published.",
+  "description": "Workspace root for the jevkit packages. Not published; the published umbrella is packages/jevkit.",
   "scripts": {
     "build": "pnpm -r build",
     "test": "vitest run",
